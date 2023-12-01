@@ -1,0 +1,781 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <form>
+      <div class="booking-form_inner-wrap">
+        <div class="booking-form_inner-heading-wrap">
+          <div class="heading-style-h5"><h2>Contact information</h2></div>
+          <div class="text-size-small is-bold">
+            <div class="f-steps-txt is--formly-2">
+              Steps
+              <span data-text="current-step" class="f-current-step">2</span
+              >/<span data-text="total-steps" class="f-total-steps">5</span>
+            </div>
+          </div>
+        </div>
+        <div class="f-2col-grid">
+          <div class="booking-form_steps-input">
+            <label for="name" class="label">First name</label>
+            <div class="booking-form_input-wrapper">
+              <input
+                type="text"
+                class="form-field w-input"
+                maxlength="256"
+                name="leadFirstName"
+                data-name="leadFirstName"
+                placeholder="First name"
+                id="leadFirstName"
+                required=""
+              />
+            </div>
+          </div>
+          <div class="booking-form_steps-input">
+            <label for="name" class="label">Last name</label>
+            <div class="booking-form_input-wrapper">
+              <input
+                type="text"
+                class="form-field w-input"
+                maxlength="256"
+                name="leadLastName"
+                data-name="leadLastName"
+                placeholder="Last name"
+                id="leadLastName"
+              />
+            </div>
+          </div>
+          <div class="booking-form_steps-input">
+            <label for="name" class="label">Phone number</label>
+            <div class="booking-form_input-wrapper">
+              <input
+                type="tel"
+                class="form-field w-input"
+                maxlength="256"
+                name="leadPhoneNumber"
+                data-name="leadPhoneNumber"
+                placeholder="Phone Number"
+                id="leadPhoneNumber"
+                required=""
+              />
+            </div>
+          </div>
+          <div class="booking-form_steps-input">
+            <label for="name" class="label">Email</label>
+            <div class="booking-form_input-wrapper">
+              <input
+                type="email"
+                class="form-field w-input"
+                maxlength="256"
+                name="leadEmail"
+                data-name="leadEmail"
+                placeholder="Email Address"
+                id="leadEmail"
+                required=""
+              />
+            </div>
+          </div>
+          <div class="booking-form_steps-input">
+            <div class="dob_wrapper">
+              <label for="name" class="label">Date of birth</label>
+            </div>
+            <div class="booking-form_input-wrapper">
+              <input
+                type="text"
+                class="form-field w-input flatpickr-input"
+                maxlength="256"
+                name="leadDOB"
+                data-name="leadDOB"
+                placeholder="MM / DD / YYYY"
+                id="leadDOB"
+                required=""
+              />
+            </div>
+          </div>
+          <div class="form-field-wrapper">
+            <div class="margin-bottom margin-xsmall">
+              <label for="Contact-2-Select">Preferred contact method*</label>
+            </div>
+            <div class="booking-form_radio-wrapper">
+              <label class="form-radio w-radio"
+                ><div
+                  class="w-form-formradioinput w-form-formradioinput--inputType-custom form-radio-icon w-radio-input w--redirected-checked"
+                ></div>
+                <input
+                  type="radio"
+                  id="Text"
+                  name="leadContactMethod"
+                  value="Text"
+                  data-name="leadContactMethod"
+                /><span class="form-radio-label w-form-label" for="Text"
+                  >Text</span
+                ></label
+              ><label class="form-radio w-radio"
+                ><div
+                  class="w-form-formradioinput w-form-formradioinput--inputType-custom form-radio-icon w-radio-input"
+                ></div>
+                <input
+                  type="radio"
+                  id="Email-6"
+                  name="leadContactMethod"
+                  value="Email"
+                  data-name="leadContactMethod"
+                  required=""
+                /><span class="form-radio-label w-form-label" for="Email-6"
+                  >Email</span
+                ></label
+              ><label class="form-radio w-radio"
+                ><div
+                  class="w-form-formradioinput w-form-formradioinput--inputType-custom form-radio-icon w-radio-input"
+                ></div>
+                <input
+                  type="radio"
+                  id="Phone-2"
+                  name="leadContactMethod"
+                  value="Phone"
+                  data-name="leadContactMethod"
+                /><span class="form-radio-label w-form-label" for="Phone-2"
+                  >Phone</span
+                ></label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="booking-form_button-wrap">
+          <a
+            id="createLead"
+            data-form="next-btn"
+            href="#"
+            class="button w-button"
+            style="pointer-events: auto; opacity: 1"
+            >Next Step</a
+          >
+        </div>
+      </div>
+      <div class="booking-form_inner-wrap">
+        <div class="booking-form_inner-heading-wrap">
+          <div class="heading-style-h5"><h2>Location &amp; availability<h2></div>
+          <div class="text-size-small is-bold">
+            <div class="f-steps-txt is--formly-2">
+              Steps
+              <span data-text="current-step" class="f-current-step">3</span
+              >/<span data-text="total-steps" class="f-total-steps">5</span>
+            </div>
+          </div>
+        </div>
+        <div class="f-2col-grid">
+          <div
+            id="w-node-_443d8996-b7e8-80e9-b3c4-73f9d880c06e-d880bfb1"
+            class="booking-form_steps-input"
+          >
+            <label for="name" class="label">Street address</label>
+            <div class="booking-form_input-wrapper">
+              <input
+                type="text"
+                class="form-field w-input"
+                maxlength="256"
+                name="leadStreetAddress"
+                data-name="leadStreetAddress"
+                placeholder="Address"
+                id="leadStreetAddress"
+              />
+            </div>
+          </div>
+          <div
+            id="w-node-_443d8996-b7e8-80e9-b3c4-73f9d880c073-d880bfb1"
+            class="booking-form_steps-input"
+          >
+            <label for="name" class="label">Address line 2</label>
+            <div class="booking-form_input-wrapper">
+              <input
+                type="text"
+                class="form-field w-input"
+                maxlength="256"
+                name="leadStreetAddress2"
+                data-name="leadStreetAddress2"
+                placeholder="Address"
+                id="leadStreetAddress-2"
+              />
+            </div>
+          </div>
+          <div class="booking-form_steps-input">
+            <label for="name" class="label">City</label>
+            <div class="booking-form_input-wrapper is---2">
+              <input
+                type="text"
+                class="form-field w-input"
+                maxlength="256"
+                name="leadCity"
+                data-name="leadCity"
+                placeholder="City"
+                id="leadCity"
+                required=""
+              />
+            </div>
+          </div>
+          <div class="booking-form_steps-input">
+            <label for="name" class="label">State</label>
+            <div class="booking-form_input-wrapper is---2">
+              <input
+                type="text"
+                class="form-field w-input"
+                maxlength="256"
+                name="leadState"
+                data-name="leadState"
+                placeholder="State"
+                id="leadState"
+              />
+            </div>
+          </div>
+          <div class="booking-form_steps-input">
+            <label for="name" class="label">Zip</label>
+            <div class="booking-form_input-wrapper is---2">
+              <input
+                type="number"
+                class="form-field w-input"
+                maxlength="256"
+                name="leadZip"
+                data-name="leadZip"
+                placeholder="Zip code"
+                id="leadZip"
+                required=""
+              />
+            </div>
+          </div>
+          <div class="booking-form_steps-input">
+            <label for="name" class="label"
+              >Ideal start date for physical therapy*</label
+            >
+            <div
+              data-delay="0"
+              data-hover="false"
+              fs-selectcustom-hideinitial="true"
+              fs-selectcustom-element="dropdown"
+              data-w-id="443d8996-b7e8-80e9-b3c4-73f9d880c08a"
+              class="booking-form_select w-dropdown"
+            >
+              <div class="booking-form_select-toggle w-dropdown-toggle">
+                <div
+                  class="booking-form_select-icon w-icon-dropdown-toggle"
+                ></div>
+                <div class="booking-form_select-text">Select one...</div>
+              </div>
+              <nav class="booking-form_select-list w-dropdown-list">
+                <select
+                  id="leadStartDate"
+                  name="leadStartDate"
+                  data-name="leadStartDate"
+                  required=""
+                  class="booking-form_select-field w-select"
+                >
+                  <option value="">Select one...</option>
+                  <option value="This week">This week</option>
+                  <option value="Next week">Next week</option>
+                  <option value="2+ weeks from now">2+ weeks from now</option>
+                </select>
+                <!-- <a
+                  href="booking.html"
+                  aria-current="page"
+                  class="booking-form_select-link w-dropdown-link w--current"
+                  >Select one...</a
+                > -->
+              </nav>
+            </div>
+          </div>
+          <p
+            id="expedite"
+            class="text-size-medium hide w-node-_443d8996-b7e8-80e9-b3c4-73f9d880c093-d880bfb1"
+          >
+            In order to expedite booking an appointment it is critical you add
+            all your insurance information accurately in the next step.
+          </p>
+        </div>
+        <div class="booking-form_button-wrap">
+          <a data-form="back-btn" href="#" class="button is-secondary w-button"
+            >Back</a
+          >
+          <a
+            id="updateLeadAddress"
+            data-form="next-btn"
+            href="#"
+            class="button w-button"
+            >Next Step</a
+          >
+        </div>
+      </div>
+      <div class="booking-form_inner-wrap">
+        <div class="booking-form_inner-heading-wrap">
+          <div class="heading-style-h5"><h2>Your needs</h2></div>
+          <div class="text-size-small is-bold">
+            <div class="f-steps-txt is--formly-2">
+              Steps
+              <span data-text="current-step" class="f-current-step">4</span
+              >/<span data-text="total-steps" class="f-total-steps">5</span>
+            </div>
+          </div>
+        </div>
+        <div class="f-2col-grid">
+          <div
+            id="w-node-_443d8996-b7e8-80e9-b3c4-73f9d880c12f-d880bfb1"
+            class="booking-form_steps-input"
+          >
+            <label for="name" class="label"
+              >What do you need PT support for? Anything else you want us to
+              know?</label
+            >
+            <div class="booking-form_input-wrapper is---2">
+              <textarea
+                id="leadPtSupport"
+                name="leadPtSupport"
+                maxlength="5000"
+                data-name="leadPtSupport"
+                placeholder=""
+                class="form-input is-text-area w-input"
+              ></textarea>
+            </div>
+          </div>
+          <div
+            id="w-node-_443d8996-b7e8-80e9-b3c4-73f9d880c134-d880bfb1"
+            class="margin-top margin-small"
+          >
+            <div
+              id="w-node-_443d8996-b7e8-80e9-b3c4-73f9d880c135-d880bfb1"
+              class="booking-form_steps-input"
+            >
+              <label for="name" class="label"
+                >Which body part are you experiencing instability, pain, or
+                weakness?</label
+              >
+              <div
+                data-delay="0"
+                data-hover="false"
+                fs-selectcustom-hideinitial="true"
+                fs-selectcustom-element="dropdown"
+                data-w-id="443d8996-b7e8-80e9-b3c4-73f9d880c138"
+                class="booking-form_select w-dropdown"
+              >
+                <div class="booking-form_select-toggle w-dropdown-toggle">
+                  <div
+                    class="booking-form_select-icon w-icon-dropdown-toggle"
+                  ></div>
+                  <div class="booking-form_select-text">Select one...</div>
+                </div>
+                <nav class="booking-form_select-list w-dropdown-list">
+                  <select
+                    id="leadWeaknessOrInstability"
+                    name="leadWeaknessOrInstability"
+                    data-name="leadWeaknessOrInstability"
+                    class="booking-form_select-field w-select"
+                  >
+                    <option value="">Select one...</option>
+                    <option value="Ankle">Ankle</option>
+                    <option value="Back">Back</option>
+                    <option value="Elbow">Elbow</option>
+                    <option value="Hip">Hip</option>
+                    <option value="Hips &amp; Legs">Hips &amp; Legs</option>
+                    <option value="Knee">Knee</option>
+                    <option value="Knees &amp; Legs">Knees &amp; Legs</option>
+                    <option value="Lower Back &amp; Knees">
+                      Lower Back &amp; Knees
+                    </option>
+                    <option value="Neck">Neck</option>
+                    <option value="Neck &amp; Back">Neck &amp; Back</option>
+                    <option value="Shoulder">Shoulder</option>
+                    <option value="Shoulder &amp; Back">
+                      Shoulder &amp; Back
+                    </option>
+                    <option value="Wrist or Hand">Wrist or Hand</option>
+                    <option value="Legs">Legs</option>
+                    <option value="Balance/Gait">Balance/Gait</option>
+                    <option value="Pelvic Floor">Pelvic Floor</option>
+                  </select>
+                  <a
+                    href="booking.html"
+                    aria-current="page"
+                    class="booking-form_select-link w-dropdown-link w--current"
+                    >Select one...</a
+                  >
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div
+            id="eligible"
+            class="margin-top margin-small hide w-node-_443d8996-b7e8-80e9-b3c4-73f9d880c141-d880bfb1"
+          >
+            <p
+              id="w-node-_443d8996-b7e8-80e9-b3c4-73f9d880c142-d880bfb1"
+              class="text-size-medium"
+            >
+              Exclusively through PeteDME, you may be eligible for free custom
+              bracing. Your PeteHealth PT will follow-up during your first
+              evaluation with more details.
+            </p>
+          </div>
+        </div>
+        <div class="booking-form_button-wrap">
+          <a data-form="back-btn" href="#" class="button is-secondary w-button"
+            >Back</a
+          >
+          <a
+            id="updateLeadNeeds"
+            data-form="next-btn"
+            href="#"
+            class="button w-button"
+            >Next Step</a
+          >
+        </div>
+      </div>
+      <div class="booking-form_inner-wrap">
+        <div class="booking-form_inner-heading-wrap">
+          <div class="heading-style-h5"><h2>Insurance information</h2></div>
+          <div class="text-size-small is-bold">
+            <div class="f-steps-txt is--formly-2">
+              Steps
+              <span data-text="current-step" class="f-current-step">5</span
+              >/<span data-text="total-steps" class="f-total-steps">5</span>
+            </div>
+          </div>
+        </div>
+        <div class="f-2col-grid">
+          <div class="booking-form_steps-input">
+            <label for="name" class="label">Do you have insurance?*</label>
+            <div
+              data-delay="0"
+              data-hover="false"
+              fs-selectcustom-hideinitial="true"
+              fs-selectcustom-element="dropdown"
+              data-w-id="443d8996-b7e8-80e9-b3c4-73f9d880c0c4"
+              class="booking-form_select w-dropdown"
+            >
+              <div class="booking-form_select-toggle w-dropdown-toggle">
+                <div
+                  class="booking-form_select-icon w-icon-dropdown-toggle"
+                ></div>
+                <div class="booking-form_select-text">Select one...</div>
+              </div>
+              <nav class="booking-form_select-list w-dropdown-list">
+                <select
+                  id="haveInsurance"
+                  name="Do-you-have-insurance"
+                  data-name="Do you have insurance?"
+                  required=""
+                  class="booking-form_select-field w-select"
+                >
+                  <option value="">Select one...</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+                <!-- <a
+                  href="booking.html"
+                  aria-current="page"
+                  class="booking-form_select-link w-dropdown-link w--current"
+                  >Select one...</a
+                > -->
+              </nav>
+            </div>
+          </div>
+          <div
+            id="typeOfInsuranceWrapper"
+            class="booking-form_steps-input hide"
+          >
+            <label for="name" class="label">What type of insurance?*</label>
+            <div
+              data-delay="0"
+              data-hover="false"
+              fs-selectcustom-hideinitial="true"
+              fs-selectcustom-element="dropdown"
+              data-w-id="443d8996-b7e8-80e9-b3c4-73f9d880c0d0"
+              class="booking-form_select w-dropdown"
+            >
+              <div class="booking-form_select-toggle w-dropdown-toggle">
+                <div
+                  class="booking-form_select-icon w-icon-dropdown-toggle"
+                ></div>
+                <div class="booking-form_select-text">Select one...</div>
+              </div>
+              <nav class="booking-form_select-list w-dropdown-list">
+                <select
+                  id="What-type-of-insurance"
+                  name="What-Type-Of-Insurance"
+                  data-name="What Type Of Insurance"
+                  class="booking-form_select-field w-select"
+                >
+                  <option value="">Select one...</option>
+                  <option value="Medicare">Medicare</option>
+                  <option value="Medicare with secondary insurance">
+                    Medicare with secondary insurance
+                  </option>
+                  <option value="Private insurance">Private insurance</option>
+                </select>
+                <!-- <a
+                  href="booking.html"
+                  aria-current="page"
+                  class="booking-form_select-link w-dropdown-link w--current"
+                  >Select one...</a
+                > -->
+              </nav>
+            </div>
+          </div>
+          <div
+            id="relationshipInsuranceWrapper"
+            class="booking-form_steps-input hide w-node-a5d2d12c-66db-4a86-b33e-8099fc0b4c51-d880bfb1"
+          >
+            <label for="name" class="label"
+              >What is your relationship to the primary subscriber*</label
+            >
+            <div
+              data-delay="0"
+              data-hover="false"
+              fs-selectcustom-hideinitial="true"
+              fs-selectcustom-element="dropdown"
+              data-w-id="a5d2d12c-66db-4a86-b33e-8099fc0b4c54"
+              class="booking-form_select w-dropdown"
+            >
+              <div class="booking-form_select-toggle w-dropdown-toggle">
+                <div
+                  class="booking-form_select-icon w-icon-dropdown-toggle"
+                ></div>
+                <div class="booking-form_select-text">Select one...</div>
+              </div>
+              <nav class="booking-form_select-list w-dropdown-list">
+                <select
+                  id="relationship"
+                  name="relationship"
+                  data-name="relationship"
+                  class="booking-form_select-field w-select"
+                >
+                  <option value="">Select one...</option>
+                  <option value="Self">Self</option>
+                  <option value="Spouse">Spouse</option>
+                  <option value="Child">Child</option>
+                  <option value="Other">Other</option>
+                </select>
+                <!-- <a
+                  href="booking.html"
+                  aria-current="page"
+                  class="booking-form_select-link w-dropdown-link w--current"
+                  >Select one...</a
+                > -->
+              </nav>
+            </div>
+          </div>
+          <div
+            id="primarySubscriber"
+            class="booking-form_inner-grid hide w-node-_3ea5a482-3ae2-1625-a06b-a36f013a63d3-d880bfb1"
+          >
+            <div class="booking-form_steps-input">
+              <label for="name" class="label">Subscribers first name*</label>
+              <div class="booking-form_input-wrapper">
+                <input
+                  type="text"
+                  class="form-field w-input"
+                  maxlength="256"
+                  name="Subscribers-First-Name"
+                  data-name="Subscribers First Name"
+                  placeholder="First name"
+                  id="Subscribers-First-Name"
+                  required=""
+                />
+              </div>
+            </div>
+            <div class="booking-form_steps-input">
+              <label for="name" class="label">Subscribers last name*</label>
+              <div class="booking-form_input-wrapper">
+                <input
+                  type="text"
+                  class="form-field w-input"
+                  maxlength="256"
+                  name="Subscribers-Last-Name"
+                  data-name="Subscribers Last Name"
+                  placeholder="Last name"
+                  id="Subscribers-Last-Name"
+                  required=""
+                />
+              </div>
+            </div>
+            <div class="booking-form_steps-input">
+              <div class="dob_wrapper">
+                <label for="name" class="label"
+                  >Subscribers date of birth*</label
+                >
+              </div>
+              <div class="booking-form_input-wrapper">
+                <input
+                  type="text"
+                  class="form-field w-input"
+                  maxlength="256"
+                  name="Subscribers-DOB"
+                  data-name="Subscribers DOB"
+                  placeholder="DD / MM / YY"
+                  id="Subscribers-DOB"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            id="medicare"
+            class="booking-form_steps-input hide w-node-_443d8996-b7e8-80e9-b3c4-73f9d880c0dc-d880bfb1"
+          >
+            <label for="name" class="label">Your medicare ID</label>
+            <div class="booking-form_input-wrapper is---2">
+              <input
+                type="text"
+                class="form-field w-input"
+                maxlength="256"
+                name="Medicare"
+                data-name="Medicare #"
+                placeholder=""
+                id="medicare-number"
+              />
+            </div>
+          </div>
+          <div id="secondary" class="booking-form_steps-input hide">
+            <label for="name" class="label">Secondary insurance provider</label>
+            <div
+              data-delay="0"
+              data-hover="false"
+              fs-selectcustom-hideinitial="true"
+              fs-selectcustom-element="dropdown"
+              data-w-id="443d8996-b7e8-80e9-b3c4-73f9d880c0e4"
+              class="booking-form_select w-dropdown"
+            >
+              <div class="booking-form_select-toggle w-dropdown-toggle">
+                <div
+                  class="booking-form_select-icon w-icon-dropdown-toggle"
+                ></div>
+                <div class="booking-form_select-text">Select one...</div>
+              </div>
+              <nav class="booking-form_select-list w-dropdown-list">
+                <select
+                  id="Secondary-insurance-provider"
+                  name="Secondary-insurance-provider-2"
+                  data-name="Secondary Insurance Provider 2"
+                  class="booking-form_select-field w-select"
+                >
+                  <option value="">Select one...</option>
+                  <option value="Aetna">Aetna</option>
+                  <option value="Anthem Blue Cross">Anthem Blue Cross</option>
+                  <option value="Blue Shield">Blue Shield</option>
+                  <option value="Kaiser Permanente">Kaiser Permanente</option>
+                </select>
+                <!-- <a
+                  href="booking.html"
+                  aria-current="page"
+                  class="booking-form_select-link w-dropdown-link w--current"
+                  >Select one...</a
+                > -->
+              </nav>
+            </div>
+          </div>
+          <div
+            id="secondaryNumber"
+            class="booking-form_steps-input hide w-node-_443d8996-b7e8-80e9-b3c4-73f9d880c0ed-d880bfb1"
+          >
+            <label for="name" class="label"
+              >Secondary insurance member ID</label
+            >
+            <div class="booking-form_input-wrapper is---2">
+              <input
+                type="text"
+                class="form-field w-input"
+                maxlength="256"
+                name="Secondary-insurance-member-2"
+                data-name="Secondary Insurance Member 2"
+                placeholder=""
+                id="Secondary-insurance-member"
+              />
+            </div>
+          </div>
+          <div id="private" class="booking-form_steps-input hide">
+            <label for="name" class="label">Private insurance provider</label>
+            <div
+              data-delay="0"
+              data-hover="false"
+              fs-selectcustom-hideinitial="true"
+              fs-selectcustom-element="dropdown"
+              data-w-id="443d8996-b7e8-80e9-b3c4-73f9d880c0f5"
+              class="booking-form_select w-dropdown"
+            >
+              <div class="booking-form_select-toggle w-dropdown-toggle">
+                <div
+                  class="booking-form_select-icon w-icon-dropdown-toggle"
+                ></div>
+                <div class="booking-form_select-text">Select one...</div>
+              </div>
+              <nav class="booking-form_select-list w-dropdown-list">
+                <select
+                  id="Private-Insurance-Provider"
+                  name="Private-Insurance-Provider"
+                  data-name="Private Insurance Provider"
+                  class="booking-form_select-field w-select"
+                >
+                  <option value="">Select one...</option>
+                  <option value="Aetna">Aetna</option>
+                  <option value="Anthem Blue Cross">Anthem Blue Cross</option>
+                  <option value="Blue Shield">Blue Shield</option>
+                  <option value="Kaiser Permanente">Kaiser Permanente</option>
+                </select>
+                <!-- <a
+                  href="booking.html"
+                  aria-current="page"
+                  class="booking-form_select-link w-dropdown-link w--current"
+                  >Select one...</a
+                > -->
+              </nav>
+            </div>
+          </div>
+          <div
+            id="privateNumber"
+            class="booking-form_steps-input hide w-node-_443d8996-b7e8-80e9-b3c4-73f9d880c0fe-d880bfb1"
+          >
+            <label for="name" class="label">Private insurance member ID</label>
+            <div class="booking-form_input-wrapper is---2">
+              <input
+                type="text"
+                class="form-field w-input"
+                maxlength="256"
+                name="Private-Insurance-Member"
+                data-name="Private Insurance Member"
+                placeholder=""
+                id="Private-insurance-member"
+              />
+            </div>
+          </div>
+          <div
+            id="noInsurance"
+            class="margin-top margin-medium hide w-node-_443d8996-b7e8-80e9-b3c4-73f9d880c0d9-d880bfb1"
+          >
+            <p class="heading-style-h4 text-weight-normal text-center">
+              Your first visit (evaluation) co-pay is $175.<br />Your subsequent
+              visit co-pay is $150.
+            </p>
+          </div>
+        </div>
+        <div class="booking-form_button-wrap">
+          <a data-form="back-btn" href="#" class="button is-secondary w-button"
+            >Back</a
+          ><input
+            type="submit"
+            value="Submit"
+            data-wait="Please wait..."
+            data-form="submit-btn"
+            class="button w-button"
+          />
+        </div>
+      </div>
+    </form>
+  </body>
+  <script
+    src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=648b570bfcbff2b235001d60"
+    type="text/javascript"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="site.js"></script>
+</html>
